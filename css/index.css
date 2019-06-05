@@ -144,6 +144,11 @@ body {
   height: 200px;
   margin: 20px 0 10px 0;
 }
+.image-mixin {
+  margin: 20px 0 0 20px;
+  height: 150px;
+  width: 150px;
+}
 /* main-container nested css */
 .main-container {
   width: 100%;
@@ -193,11 +198,10 @@ body {
   /* placeholder values for picture */
   /* media query for phone */
 }
-.main-container .introduction .static-img {
-  width: 25%;
-  height: 50%;
-  border: dashed 2px red;
-  margin: 0px 20px 0px 20px;
+.main-container .introduction .static-img img {
+  margin: 20px 0 0 20px;
+  height: 150px;
+  width: 150px;
 }
 .main-container .introduction .name {
   margin: 0px 20px 0px 20px;
@@ -308,7 +312,7 @@ body {
 }
 @media (max-width: 500px) {
   .main-container .main-content .work-history {
-    height: 400px;
+    height: 300px;
   }
 }
 .main-container footer {
