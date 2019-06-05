@@ -139,6 +139,11 @@ body {
   margin: 0 auto;
 }
 /* CSS variables and mixins */
+.main-dimensions {
+  width: 450px;
+  height: 200px;
+  margin: 20px 0 10px 0;
+}
 /* main-container nested css */
 .main-container {
   width: 100%;
@@ -217,4 +222,81 @@ body {
   .main-container .introduction .static-img {
     display: none;
   }
+}
+.main-container .main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-content .separation {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  /* Phone View */
+}
+.main-container .main-content .separation .summary {
+  width: 450px;
+  height: 200px;
+  margin: 20px 0 10px 0;
+}
+.main-container .main-content .separation .summary h3 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.main-container .main-content .separation .summary p {
+  font-size: 1.4rem;
+  color: grey;
+  margin-bottom: 10px;
+}
+.main-container .main-content .separation .skills {
+  width: 450px;
+  height: 200px;
+  margin: 20px 0 10px 0;
+}
+.main-container .main-content .separation .skills h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.main-container .main-content .separation .skills ul {
+  margin: 10px 0 10px 0;
+  border: solid 1px lightgrey;
+}
+.main-container .main-content .separation .skills ul li {
+  font-size: 1.4rem;
+  color: grey;
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: left;
+  width: 100%;
+  height: 40px;
+  border-bottom: solid 1px lightgrey;
+}
+@media (max-width: 500px) {
+  .main-container .main-content .separation {
+    flex-direction: column;
+  }
+}
+.main-container .main-content .work-history {
+  width: 100%;
+  height: 200px;
+}
+.main-container .main-content .work-history h3 {
+  font-size: 3rem;
+}
+.main-container .main-content .work-history table tr:nth-child(even) {
+  background-color: #eee;
+}
+.main-container .main-content .work-history table {
+  border-top: solid 1px grey;
+  border-bottom: solid 1px grey;
+  width: 100%;
+  height: 200px;
+}
+.main-container .main-content .work-history td {
+  font-size: 2rem;
+  text-align: left;
+}
+.main-container .main-content .work-history th {
+  font-size: 2rem;
 }
