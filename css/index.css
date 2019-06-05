@@ -211,8 +211,8 @@ body {
   margin-bottom: 10px;
 }
 .main-container .introduction .name button {
-  width: 80px;
-  height: 30px;
+  width: 90px;
+  height: 40px;
   background: grey;
   color: white;
   border: 2px solid grey;
@@ -275,14 +275,17 @@ body {
 @media (max-width: 500px) {
   .main-container .main-content .separation {
     flex-direction: column;
+    height: 550px;
   }
 }
 .main-container .main-content .work-history {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  /* phone view */
 }
 .main-container .main-content .work-history h3 {
   font-size: 3rem;
+  padding-bottom: 10px;
 }
 .main-container .main-content .work-history table tr:nth-child(even) {
   background-color: #eee;
@@ -296,7 +299,26 @@ body {
 .main-container .main-content .work-history td {
   font-size: 2rem;
   text-align: left;
+  color: grey;
 }
 .main-container .main-content .work-history th {
   font-size: 2rem;
+  padding-top: 10px;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .main-container .main-content .work-history {
+    height: 400px;
+  }
+}
+.main-container footer {
+  width: 100%;
+  height: 50px;
+  background: grey;
+}
+.main-container footer p {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
 }

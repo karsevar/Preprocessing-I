@@ -153,8 +153,8 @@ html, body {
 			}
 
 			button {
-				width: 80px;
-				height: 30px;
+				width: 90px;
+				height: 40px;
 				background: grey;
 				color: white;
 				border: 2px solid grey;
@@ -228,15 +228,17 @@ html, body {
 			/* Phone View */
 			@media(max-width: 500px) {
 				flex-direction: column;
+				height: 550px;
 			}
 		}
 
 		.work-history {
 			width: 100%;
-			height: 200px;
+			height: 300px;
 
 			h3 {
 				font-size: @main-heading-font;
+				padding-bottom: 10px;
 			}
 
 			table tr:nth-child(even) {
@@ -249,17 +251,40 @@ html, body {
 
 				width: 100%;
 				height: 200px;
+
 			  }
 			  
 			  td {
 				  font-size: @table-font; 
 				  text-align: left;
+				  color: grey;
 			  }
 			  
 			  th {
 				  font-size: @table-font;
+				  padding-top: 10px;
+				  text-align: left;
+			  }
+			
+			  /* phone view */
+			  @media(max-width: 500px) {
+				  height: 400px;
 			  }
 		}
+	}
+
+	footer {
+		width: 100%;
+		height: 50px;
+		background: grey;
+
+		p {
+			font-size: 1.4rem;
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+		}
+
 	}
 }
 
